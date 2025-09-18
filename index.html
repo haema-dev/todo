@@ -1,1 +1,302 @@
-test
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 엔지니어 [이름] 포트폴리오</title>
+    <style>
+        /* 기본 스타일링 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 2rem;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        a:hover {
+            color: #5dadec;
+        }
+
+        /* 섹션 스타일 */
+        section {
+            padding: 6rem 0 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* 소개(Hero) 섹션 */
+        #hero {
+            background: #5dadec;
+            color: white;
+            text-align: center;
+            padding: 10rem 0;
+            margin-top: 60px; /* 고정 헤더 높이만큼 여백 */
+        }
+        #hero h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        #hero p {
+            font-size: 1.5rem;
+        }
+
+        /* 스킬 섹션 */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill-category {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .skill-category h3 {
+            margin-top: 0;
+            color: #5dadec;
+        }
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-category ul li {
+            background: #eef;
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        /* 프로젝트 섹션 */
+        .project-card {
+            background: #fff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        .project-tags {
+            margin: 1rem 0;
+        }
+        .project-tags span {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 0.9rem;
+        }
+        .project-links a {
+            text-decoration: none;
+            background: #5dadec;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .project-links a:hover {
+            background: #327ab7;
+        }
+
+        /* 연락처 및 푸터 */
+        #contact {
+            text-align: center;
+        }
+        #contact p {
+            font-size: 1.2rem;
+        }
+        #contact a {
+            color: #5dadec;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>[여기에 이름 입력]</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#skills">기술 스택</a></li>
+                    <li><a href="#projects">프로젝트</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>AI로 문제를 해결하는 백엔드 개발자</h2>
+                <p>데이터 기반의 가치 창출을 목표로 하는 예비 AI 엔지니어입니다.</p>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2 class="section-title">소개</h2>
+            <p>
+                안녕하세요. N년간 안정적인 서비스를 구축하고 운영해온 경험이 있는 백엔드 개발자 [이름]입니다. 
+                대용량 트래픽 처리와 효율적인 데이터 관리 경험을 통해 얻은 시스템 설계 능력에 매력을 느껴왔습니다. 
+                이제는 축적된 데이터를 분석하고 예측 모델을 만드는 AI 기술을 통해 더 큰 가치를 창출하는 AI 엔지니어로 성장하고자 합니다.
+                저의 탄탄한 백엔드 개발 경험은 머신러닝 모델을 실제 서비스에 안정적으로 배포하고 운영하는 데 큰 강점이 될 것이라 확신합니다.
+            </p>
+        </section>
+
+        <section id="skills" class="container">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>AI / Machine Learning</h3>
+                    <ul>
+                        <li>Python, Scikit-Learn, TensorFlow, PyTorch</li>
+                        <li>Pandas, NumPy, Matplotlib</li>
+                        <li>자연어 처리 (NLP), 컴퓨터 비전 (CV) 기초</li>
+                        <li>머신러닝 모델링 및 평가</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python (Django, Flask), Java (Spring)</li>
+                        <li>MySQL, PostgreSQL, MongoDB</li>
+                        <li>RESTful API 설계 및 개발</li>
+                        <li>Docker, Kubernetes</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Collaboration</h3>
+                    <ul>
+                        <li>Git, GitHub</li>
+                        <li>AWS (EC2, S3, RDS), GCP</li>
+                        <li>Jira, Slack</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <div class="project-card">
+                <h3>프로젝트 1: 감정 분석 API 서버 개발</h3>
+                <p>
+                    사용자가 입력한 텍스트의 긍정/부정을 실시간으로 분석하여 결과를 반환하는 RESTful API 서버입니다. 
+                    KoBERT 모델을 파인튜닝하여 한국어 문장에 대한 분석 정확도를 높였으며, 백엔드 경험을 살려 Docker 컨테이너 환경에서 안정적으로 서비스될 수 있도록 구축했습니다.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>PyTorch</span>
+                    <span>KoBERT</span>
+                    <span>Docker</span>
+                </div>
+                <div class="project-links">
+                    <a href="#your-github-repo-link" target="_blank">GitHub 저장소</a>
+                    </div>
+            </div>
+
+            <div class="project-card">
+                <h3>프로젝트 2: 상품 이미지 기반 추천 시스템</h3>
+                <p>
+                    유사한 스타일의 상품을 추천해주는 시스템을 개발했습니다. ResNet을 사용하여 이미지 특징(feature)을 추출하고, 
+                    이를 기반으로 유사도 측정을 통해 사용자에게 개인화된 상품을 추천합니다. 대규모 이미지 데이터를 효율적으로 처리하고 서빙하는 파이프라인을 설계했습니다.
+                </p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>OpenCV</span>
+                    <span>AWS S3</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="#your-github-repo-link" target="_blank">GitHub 저장소</a>
+                </div>
+            </div>
+            
+             </section>
+
+        <section id="contact" class="container">
+            <h2 class="section-title">연락처</h2>
+            <p>함께 성장할 기회를 기다리고 있습니다. 아래 연락처로 편하게 연락 주세요.</p>
+            <p>
+                Email: <a href="mailto:your_email@example.com">your_email@example.com</a>
+            </p>
+            <p>
+                GitHub: <a href="https://github.com/your_username" target="_blank">github.com/your_username</a>
+            </p>
+            <p>
+                LinkedIn: <a href="https://linkedin.com/in/your_profile" target="_blank">linkedin.com/in/your_profile</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [이름]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
